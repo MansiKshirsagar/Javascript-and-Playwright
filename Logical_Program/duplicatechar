@@ -1,0 +1,16 @@
+let string1="aabsvsabaabsb"
+let duppchar=[]
+
+for (let i=0; i<=string1.length-1;i++)
+{
+    for (let j=i+1;j<=string1.length-1;j++)
+    {
+        if(string1[i]===string1[j]&& !duppchar.includes(string1[i]))
+        {
+            duppchar.push(string1[i])
+        }
+    }
+}
+console.log(duppchar)
+let newstring =duppchar.join()
+console.log(newstring)
